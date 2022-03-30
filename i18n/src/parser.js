@@ -49,7 +49,7 @@ function parsePattern(pattern) {
   // The parsing logic further below assumes that there will always be a DECIMAL_SEP in the pattern.
   // However, some locales (e.g. agq_CM) do not have one, thus we add one after the last ZERO
   // (which is the last thing before the `posSuf` - if any). Since there will be no ZEROs or DIGITs
-  // after DECIMAL_SEP, `min/maxFrac` will remain 0 (which is accurate - no fraction digits) and
+  // after DECIMAL_SEP, `min/maxxFrac` will remain 0 (which is accurate - no fraction digits) and
   // `posSuf` will be processed correctly.
   // For example `#,##0$` would be converted to `#,##0.$`, which would (correctly) result in:
   // `minFrac: 0`, `maxFrac: 0`, `posSuf: '$'`
