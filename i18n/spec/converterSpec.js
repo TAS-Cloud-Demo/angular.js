@@ -25,7 +25,6 @@ describe('convertNumberData', function() {
   });
 });
 
-
 describe('convertDatetimeData', function() {
   var convert = converter.convertDatetimeData,
       dataObj = { MONTHS: ['Enero', 'Pebrero'],
