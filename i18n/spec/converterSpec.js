@@ -54,21 +54,4 @@ describe('convertDatetimeData', function() {
     expect(processedData.shortTime).toBe('h');
   });
   
-   it('new should convert empty datetime obj', function() {
-    var processedData = convert(dataObj);
-    expect(processedData.MONTH).toEqual(['Enero', 'Pebrero']);
-    expect(processedData.STANDALONEMONTH).toEqual(['Enero', 'Pebrero']);
-    expect(processedData.SHORTMONTH).toEqual(['Ene', 'Peb']);
-    expect(processedData.DAY).toEqual(['Linggo', 'Lunes']);
-    expect(processedData.SHORTDAY).toEqual(['Lin', 'Lun']);
-    expect(processedData.AMPMS).toEqual(['AM', 'PM']);
-    expect(processedData.medium).toBe('c g');
-    expect(processedData.short).toBe('d h');
-    expect(processedData.fullDate).toBe('a');
-    expect(processedData.longDate).toBe('b');
-    expect(processedData.mediumDate).toBe('c');
-    expect(processedData.shortDate).toBe('d');
-    expect(processedData.mediumTime).toBe('g');
-    expect(processedData.shortTime).toBe('h');
-  });
 });
