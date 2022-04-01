@@ -11,8 +11,8 @@ postMerge:
   pattern:
     - "./i18n/spec/*.js"
     - "./i18n/ucd/spec/*.js"
-postRun:
-     command:
-        - yarn --version
+# postRun:
+#      command:
+#         - yarn --version
 nodeVersion: 14.16.1
-parallelism: 5
+# parallelism: 5
