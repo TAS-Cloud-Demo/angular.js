@@ -250,7 +250,7 @@ describe('pluralExtractor', function() {
     closureI18nExtractor.pluralExtractor(content, localeInfo);
     var pluralCat = localeInfo['fr_CA'].pluralCat;
     expect(pluralCat).toBeDefined();
-    // pluralCat is the source text for the pluralCat and contains @@
+    // plralCat is the source text for the pluralCat and contains @@
     // placeholders that need to be stripped before evaluation.
     // Ref: closureI18nExtractor.pluralExtractor.
     pluralCat = pluralCat.replace(/^@@|@@$/g, '');
