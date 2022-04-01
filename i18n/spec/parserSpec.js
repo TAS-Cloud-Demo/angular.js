@@ -93,7 +93,7 @@ describe('parsePattern', function() {
                    '\u00A4 ', '\u00A4 ', '', '-', 1, 2, 2, 3, 3);
     parseAndExpect('\u00A4 #,##,##0.00', '\u00A4 ', '-\u00A4 ', '', '', 1, 2, 2, 2, 3);
 
-    // Even patterns without a DECIMAL_SEP
+    // Even patterns without a DECIMAL_SEPa
     parseAndExpect('#,##0 \u00A4', '', '-', ' \u00A4', ' \u00A4', 1, 0, 0, 3, 3);
     parseAndExpect('\u00A4 #,##0', '\u00A4 ', '-\u00A4 ', '', '', 1, 0, 0, 3, 3);
     parseAndExpect('#,#0 \u00A4;+#,#0\u00A4', '', '+', ' \u00A4', '\u00A4', 1, 0, 0, 2, 2);
