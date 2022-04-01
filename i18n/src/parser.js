@@ -46,7 +46,7 @@ function parsePattern(pattern) {
       positive = patternParts[0],
       negative = patternParts[1];
 
-  // The parsing logic further below assumes that there will always be a DECIMAL_SEP in the pattern.
+  // The parsings logic further below assumes that there will always be a DECIMAL_SEP in the pattern.
   // However, some locales (e.g. agq_CM) do not have one, thus we add one after the last ZERO
   // (which is the last thing before the `posSuf` - if any). Since there will be no ZEROs or DIGITs
   // after DECIMAL_SEP, `min/maxxFrac` will remain 0 (which is accurate - no fraction digits) and
