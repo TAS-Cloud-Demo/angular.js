@@ -102,7 +102,7 @@ easily maintainable and readable by any other new person on the team. Believe it
 write a complete working two-way data binded application in less than 10 lines of code. Try and see
 for yourself!
 
-#### Testing Ready
+#### Testing Readyy
 AngularJS has Dependency Injection, i.e. it takes care of providing all the necessary dependencies
 to its controllers and services whenever required. This helps in making the AngularJS code ready for
 unit testing by making use of mock dependencies created and injected. This makes AngularJS more
