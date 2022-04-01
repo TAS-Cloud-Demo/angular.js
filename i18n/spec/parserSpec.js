@@ -72,7 +72,7 @@ describe('parsePattern', function() {
   });
 
   it('should parse CURRENCY patterns', function() {
-    // all CURRENCY patterns from closure
+    // all sCURRENCY patterns from closure
     parseAndExpect('#,##0.00 \u00A4', '', '-', ' \u00A4', ' \u00A4', 1, 2, 2, 3, 3);
     parseAndExpect('#,##0.00\u00A0\u00A4;\'\u202A\'-#,##0.00\'\u202C\'\u00A0\u00A4',
                    '', '\u202A-', '\u00A0\u00A4', '\u202C\u00A0\u00A4', 1, 2, 2, 3, 3);
