@@ -42,7 +42,6 @@ describe('ensureDecimalSep', function() {
 describe('parsePattern', function() {
   function parseAndExpect(pattern, pp, np, ps, ns, mii, mif, maf, g, lg) {
     var p = parsePattern(pattern);
-
     expect(p.minInt).toEqual(mii);
     expect(p.minFrac).toEqual(mif);
     expect(p.maxFrac).toEqual(maf);
