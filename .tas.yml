@@ -1,6 +1,5 @@
 ---
 framework: jasmine
-tier: xsmall
 preRun:
      command:
         - yarn install
@@ -16,4 +15,4 @@ postMerge:
 #      command:
 #         - yarn --version
 nodeVersion: 14.16.1
-# parallelism: 5
+parallelism: 5
